@@ -1649,3 +1649,90 @@ select {
   font-size: 0.62rem;
   letter-spacing: 0.22em;
 }
+
+/* FINAL INTERACTION REFINES */
+
+.nav-cta {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  min-height: 48px;
+  padding: 0 28px;
+  box-shadow: none;
+}
+
+.nav-cta:hover {
+  background: var(--gold);
+  color: var(--navy);
+  border-radius: 18px;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(216, 181, 106, 0.22);
+}
+
+.therapy-card,
+.catalog-card,
+.course-card,
+.condition-card,
+.approach-card,
+.process-step,
+.benefit-card,
+.contact-form,
+.contact-info-panel {
+  will-change: transform, opacity;
+}
+
+.element-card {
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.element-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(216, 181, 106, 0.45);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.16);
+}
+
+.element-card:hover .element-icon-img {
+  transform: scale(1.12) rotate(4deg);
+}
+
+.philosophy-media,
+.hero-media,
+.therapy-detail-image img,
+.catalog-card img,
+.therapy-image,
+.course-card img {
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.philosophy-media:hover img,
+.philosophy-media:hover video,
+.hero-media:hover video,
+.catalog-card:hover img,
+.therapy-card:hover .therapy-image,
+.course-card:hover img {
+  transform: scale(1.035);
+}
+
+.loader-screen {
+  animation: loaderFade 0.65s ease forwards;
+  animation-delay: 1.55s;
+}
+
+.loader-symbol {
+  filter: drop-shadow(0 0 24px rgba(216, 181, 106, 0.24));
+}
+
+.loader-text::after {
+  content: "Restaurando equilibrio";
+  display: block;
+  margin-top: 14px;
+  color: rgba(246, 242, 234, 0.55);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+}
