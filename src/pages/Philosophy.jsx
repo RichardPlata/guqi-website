@@ -1,5 +1,8 @@
 import Header from "../components/Header";
 
+import philosophyVideo from "../assets/videos/philosopie-video.mp4";
+import biomagneticVideo from "../assets/videos/biomagnetic-video.mp4";
+
 import woodIcon from "../assets/images/Wood.svg";
 import fireIcon from "../assets/images/Fire.svg";
 import earthIcon from "../assets/images/Earth.svg";
@@ -7,7 +10,6 @@ import metalIcon from "../assets/images/Metal.svg";
 import waterIcon from "../assets/images/Water.svg";
 
 import fasciaImage from "../assets/images/fascia-therapie-image.jpg";
-import biomagneticVideo from "../assets/videos/biomagnetic-video.mp4";
 import yinYangImage from "../assets/images/ying-yang-image.jpg";
 
 const elements = [
@@ -24,7 +26,10 @@ export default function Philosophy() {
       <Header />
 
       <main className="philosophy-page">
-        <section className="philosophy-hero">
+        <section className="philosophy-hero contact-video-hero">
+          <video src={philosophyVideo} autoPlay muted loop playsInline />
+          <div className="contact-video-overlay" />
+
           <div className="container">
             <span className="eyebrow">Filosofía GU-QI</span>
 

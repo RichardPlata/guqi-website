@@ -20,12 +20,12 @@ export default function Home() {
             <div className="hero-copy">
               <span className="eyebrow">Centro Integrativo</span>
 
-              <h1>
-                El custodio
-                <br />
-                <em>de tu</em>
-                <br />
-                bienestar vital
+              <h1 className="hero-title">
+                <span>El custodio</span>
+                <span>
+                  <em>de tu</em>
+                </span>
+                <span>bienestar vital</span>
               </h1>
 
               <p>
@@ -42,6 +42,11 @@ export default function Home() {
                   Explorar Terapias
                 </a>
               </div>
+
+              <a href="#terapias-destacadas" className="scroll-indicator">
+                <span />
+                Descubrir
+              </a>
             </div>
 
             <div className="hero-visual">
@@ -105,7 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="featured-therapies">
+        <section className="featured-therapies" id="terapias-destacadas">
           <div className="container">
             <div className="section-header">
               <span className="section-tag">Terapias Destacadas</span>

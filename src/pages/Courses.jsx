@@ -1,5 +1,7 @@
 import Header from "../components/Header";
 
+import courseVideo from "../assets/videos/course-video.mp4";
+
 import obesidadImg from "../assets/images/Obesidad-Image.jpg";
 import prostataImg from "../assets/images/Prostata-Image.jpg";
 
@@ -28,14 +30,19 @@ export default function Courses() {
       <Header />
 
       <main className="courses-page">
-        <section className="courses-hero">
+        <section className="courses-hero contact-video-hero">
+          <video src={courseVideo} autoPlay muted loop playsInline />
+          <div className="contact-video-overlay" />
+
           <div className="container">
             <span className="eyebrow">Formación GU-QI</span>
+
             <h1>
               Cursos para profundizar
               <br />
               en salud integrativa.
             </h1>
+
             <p>
               Programas para comprender el cuerpo desde una mirada física,
               emocional, energética y terapéutica.

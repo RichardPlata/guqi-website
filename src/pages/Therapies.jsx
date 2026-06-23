@@ -1,5 +1,7 @@
 import Header from "../components/Header";
 
+import therapiesVideo from "../assets/videos/therapie-video.mp4";
+
 import podalImg from "../assets/images/podal-therapie-image.jpg";
 import neckImg from "../assets/images/neck-therapie-image.jpg";
 import lymphaticImg from "../assets/images/lymphatic-therapie-image.jpg";
@@ -107,7 +109,10 @@ export default function Therapies() {
       <Header />
 
       <main className="therapies-page">
-        <section className="therapies-hero">
+        <section className="therapies-hero contact-video-hero">
+          <video src={therapiesVideo} autoPlay muted loop playsInline />
+          <div className="contact-video-overlay" />
+
           <div className="container therapies-hero-content">
             <span className="eyebrow">Protocolos Terapéuticos</span>
 
@@ -145,9 +150,7 @@ export default function Therapies() {
                         <h2>{therapy.title}</h2>
                         <p>{therapy.text}</p>
 
-                        <a href="/terapias/tuina-cervical">
-                          Ver detalle
-                        </a>
+                        <a href="/terapias/tuina-cervical">Ver detalle</a>
                       </div>
                     </article>
                   ))}
