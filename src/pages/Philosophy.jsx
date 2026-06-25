@@ -9,7 +9,7 @@ import earthIcon from "../assets/images/Earth.svg";
 import metalIcon from "../assets/images/Metal.svg";
 import waterIcon from "../assets/images/Water.svg";
 
-import fasciaImage from "../assets/images/fascia-therapie-image.webp";
+import fasciaImage from "../assets/images/fascia-image.jpg";
 import yinYangImage from "../assets/images/ying-yang.svg";
 
 const elements = [
