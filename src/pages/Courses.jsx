@@ -2,7 +2,7 @@ import Header from "../components/Header";
 
 import courseVideo from "../assets/videos/course-video.mp4";
 
-import obesidadImg from "../assets/images/Obesidad-Image.jpg";
+import obesidadImg from "../assets/images/Obesidad-Image.webp";
 import prostataImg from "../assets/images/Prostata-Image.jpg";
 
 const courses = [

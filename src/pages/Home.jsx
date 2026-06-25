@@ -4,10 +4,10 @@ import logoSymbol from "../assets/logo/guqi-symbol.svg";
 import heroVideo from "../assets/videos/hero-video.mp4";
 import ctaVideo from "../assets/videos/cta-video.mp4";
 
-import podalImg from "../assets/images/podal-therapie-image.jpg";
-import neckImg from "../assets/images/neck-therapie-image.jpg";
-import lymphaticImg from "../assets/images/lymphatic-therapie-image.jpg";
-import tuinaImg from "../assets/images/tuinacorporal-therapie-image.jpg";
+import podalImg from "../assets/images/podal-therapie-image.webp";
+import neckImg from "../assets/images/neck-therapie-image.webp";
+import lymphaticImg from "../assets/images/lymphatic-therapie-image.webp";
+import tuinaImg from "../assets/images/tuinacorporal-therapie-image.webp";
 
 export default function Home() {
   return (

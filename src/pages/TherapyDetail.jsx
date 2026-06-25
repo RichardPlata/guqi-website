@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 
-import podalImg from "../assets/images/podal-therapie-image.jpg";
+import podalImg from "../assets/images/podal-therapie-image.webp";
 
 export default function TherapyDetail() {
   return (
