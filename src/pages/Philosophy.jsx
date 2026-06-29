@@ -10,7 +10,7 @@ import metalIcon from "../assets/images/Metal.svg";
 import waterIcon from "../assets/images/Water.svg";
 
 import fasciaImage from "../assets/images/fascia-image.jpg";
-import yinYangImage from "../assets/images/ying-yang.svg";
+import yinYangImage from "../assets/images/ying-yang.png";
 
 const elements = [
   { title: "Madera", icon: woodIcon },
@@ -74,7 +74,7 @@ export default function Philosophy() {
         <section className="philosophy-block light">
           <div className="container philosophy-grid">
             <div className="philosophy-media">
-              <img src={fasciaImage} alt="Fascia abstracta" />
+              <img src={fasciaImage} alt="Terapia fascial" />
             </div>
 
             <div>
@@ -133,8 +133,8 @@ export default function Philosophy() {
               </p>
             </div>
 
-            <div className="philosophy-media">
-              <img src={yinYangImage} alt="Yin y Yang" />
+            <div className="philosophy-media yinyang">
+              <img src={yinYangImage} alt="Yin Yang" />
             </div>
           </div>
         </section>
