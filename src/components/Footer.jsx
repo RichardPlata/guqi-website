@@ -24,8 +24,8 @@ export default function Footer() {
 
         <div className="footer-contact">
           <span>Contacto</span>
-          <p>+52 000 000 0000</p>
-          <p>contacto@guqi.com</p>
+          <p>+52 722 677 3247</p>
+          <p>guqiwellness@gmail.com</p>
         </div>
       </div>
     </footer>

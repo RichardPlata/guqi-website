@@ -59,15 +59,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="stats">
-          <div className="container stats-grid">
-            <Stat number="14+" label="Años de práctica clínica" />
-            <Stat number="2,400+" label="Pacientes atendidos" />
-            <Stat number="12" label="Modalidades terapéuticas" />
-            <Stat number="98%" label="Satisfacción en seguimiento" />
-          </div>
-        </section>
-
         <section className="approach">
           <div className="container">
             <div className="section-header">
@@ -172,9 +163,6 @@ export default function Home() {
   );
 }
 
-function Stat({ number, label }) {
-  return <div className="stat-card"><strong>{number}</strong><span>{label}</span></div>;
-}
 
 function ApproachCard({ title, text }) {
   return <div className="approach-card"><h3>{title}</h3><p>{text}</p></div>;
