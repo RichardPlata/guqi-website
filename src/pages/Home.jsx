@@ -9,6 +9,9 @@ import neckImg from "../assets/images/neck-therapie-image.webp";
 import lymphaticImg from "../assets/images/lymphatic-therapie-image.webp";
 import tuinaImg from "../assets/images/tuinacorporal-therapie-image.webp";
 
+const whatsappLink =
+  "https://wa.me/527226773247?text=Hola,%20me%20gustaría%20agendar%20una%20evaluación%20en%20GU-QI.";
+
 export default function Home() {
   return (
     <>
@@ -22,9 +25,7 @@ export default function Home() {
 
               <h1 className="hero-title">
                 <span>El custodio</span>
-                <span>
-                  <em>de tu</em>
-                </span>
+                <span><em>de tu</em></span>
                 <span>bienestar vital</span>
               </h1>
 
@@ -35,7 +36,7 @@ export default function Home() {
               </p>
 
               <div className="hero-actions">
-                <a href="/contacto" className="btn btn-primary">
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   Agendar Evaluación
                 </a>
                 <a href="/terapias" className="btn btn-secondary">
@@ -51,7 +52,6 @@ export default function Home() {
 
             <div className="hero-visual">
               <img src={logoSymbol} alt="" className="hero-watermark" />
-
               <div className="hero-media">
                 <video src={heroVideo} autoPlay muted loop playsInline />
               </div>
@@ -63,11 +63,7 @@ export default function Home() {
           <div className="container">
             <div className="section-header">
               <span className="section-tag">Pilares de Nuestra Práctica</span>
-              <h2>
-                Un enfoque que va
-                <br />
-                más allá del síntoma
-              </h2>
+              <h2>Un enfoque que va<br />más allá del síntoma</h2>
               <p>
                 En GU-QI evaluamos el sistema completo: energético, estructural
                 y emocional para identificar el origen real del desequilibrio.
@@ -105,11 +101,7 @@ export default function Home() {
           <div className="container">
             <div className="section-header">
               <span className="section-tag">Terapias Destacadas</span>
-              <h2>
-                Protocolos diseñados
-                <br />
-                para restaurar equilibrio
-              </h2>
+              <h2>Protocolos diseñados<br />para restaurar equilibrio</h2>
             </div>
 
             <div className="therapy-grid">
@@ -125,11 +117,7 @@ export default function Home() {
           <div className="container process-content">
             <div className="section-header">
               <span className="section-tag">Proceso Terapéutico</span>
-              <h2>
-                Tres pasos para iniciar
-                <br />
-                tu recuperación
-              </h2>
+              <h2>Tres pasos para iniciar<br />tu recuperación</h2>
             </div>
 
             <div className="process-steps">
@@ -145,15 +133,13 @@ export default function Home() {
           <div className="final-cta-overlay" />
           <div className="container final-cta-content">
             <span className="section-tag">Agenda tu evaluación</span>
-            <h2>
-              Tu bienestar comienza
-              <br />
-              con equilibrio.
-            </h2>
+            <h2>Tu bienestar comienza<br />con equilibrio.</h2>
             <p>Da el primer paso hacia una experiencia terapéutica personalizada.</p>
 
             <div className="hero-actions">
-              <a href="/contacto" className="btn btn-primary">Agendar cita</a>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                Agendar cita
+              </a>
               <a href="/terapias" className="btn btn-secondary">Explorar terapias</a>
             </div>
           </div>
@@ -162,7 +148,6 @@ export default function Home() {
     </>
   );
 }
-
 
 function ApproachCard({ title, text }) {
   return <div className="approach-card"><h3>{title}</h3><p>{text}</p></div>;

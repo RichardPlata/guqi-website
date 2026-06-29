@@ -11,6 +11,7 @@ import TherapyDetail from "./pages/TherapyDetail";
 import Philosophy from "./pages/Philosophy";
 import Courses from "./pages/Courses";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/cursos" element={<Courses />} />
         <Route path="/contacto" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

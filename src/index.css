@@ -1327,6 +1327,34 @@ select {
    FOOTER
 ========================== */
 
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-contact span {
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.footer-contact a {
+  display: block;
+  margin-bottom: 12px;
+  color: rgba(246, 242, 234, 0.68);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  transition: color 0.25s ease;
+}
+
+.footer-contact a:hover {
+  color: var(--gold);
+}
+
 .footer,
 .site-footer {
   padding: 72px 0 28px;
@@ -1335,9 +1363,10 @@ select {
 }
 
 .footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+  gap: 70px;
+  align-items: start;
 }
 
 .site-footer-grid {

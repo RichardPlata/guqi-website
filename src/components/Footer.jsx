@@ -24,8 +24,12 @@ export default function Footer() {
 
         <div className="footer-contact">
           <span>Contacto</span>
-          <p>+52 722 677 3247</p>
-          <p>guqiwellness@gmail.com</p>
+          <a href="https://wa.me/527226773247" target="_blank" rel="noopener noreferrer">
+            +52 722 677 3247
+          </a>
+          <a href="mailto:guqiwellness@gmail.com">
+            guqiwellness@gmail.com
+          </a>
         </div>
       </div>
     </footer>
