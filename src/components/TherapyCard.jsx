@@ -5,7 +5,9 @@ export default function TherapyCard({ therapy, onClick }) {
 
       <div className="catalog-card-body">
         <span className="catalog-duration">{therapy.duration}</span>
+
         <h2>{therapy.title}</h2>
+
         <p>{therapy.text}</p>
 
         <button type="button" className="catalog-link" onClick={onClick}>

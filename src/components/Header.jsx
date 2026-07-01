@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logoFull from "../assets/logo/guqi-logo.svg";
 
+const whatsappLink =
+  "https://wa.me/527226773247?text=Hola,%20me%20gustaría%20agendar%20una%20evaluación%20en%20GU-QI.";
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const closeMenu = () => setMenuOpen(false);
 
   return (
@@ -21,9 +23,15 @@ export default function Header() {
           <Link to="/contacto" onClick={closeMenu}>Contacto</Link>
         </nav>
 
-        <Link to="/contacto" className="btn nav-cta desktop-cta" onClick={closeMenu}>
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn nav-cta desktop-cta"
+          onClick={closeMenu}
+        >
           Reservar
-        </Link>
+        </a>
 
         <button
           type="button"

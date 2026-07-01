@@ -1,41 +1,36 @@
+import { useState } from "react";
+
 import Header from "../components/Header";
+import CourseCard from "../components/CourseCard";
+import CourseModal from "../components/CourseModal";
+
+import courses from "../data/courses";
 
 import courseVideo from "../assets/videos/course-video.mp4";
 
-import obesidadImg from "../assets/images/Obesidad-Image.webp";
-import prostataImg from "../assets/images/Prostata-Image.jpg";
-
-const courses = [
-  {
-    title: "Ingeniería de la Obesidad",
-    image: obesidadImg,
-    type: "Curso especializado",
-    description:
-      "Formación enfocada en comprender la obesidad desde una perspectiva integrativa, corporal, emocional y energética.",
-    audience: "Profesionales y personas interesadas en salud integrativa",
-  },
-  {
-    title: "Inflamación de la Próstata",
-    image: prostataImg,
-    type: "Curso especializado",
-    description:
-      "Curso orientado a explorar el vínculo entre inflamación, desvalorización, humillación y procesos corporales.",
-    audience: "Profesionales, terapeutas y estudiantes",
-  },
-];
-
 export default function Courses() {
+  const [selectedCourse, setSelectedCourse] = useState(null);
+
   return (
     <>
       <Header />
 
       <main className="courses-page">
         <section className="courses-hero contact-video-hero">
-          <video src={courseVideo} autoPlay muted loop playsInline />
+          <video
+            src={courseVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+
           <div className="contact-video-overlay" />
 
           <div className="container">
-            <span className="eyebrow">Formación GU-QI</span>
+            <span className="eyebrow">
+              Formación GU-QI
+            </span>
 
             <h1>
               Cursos para profundizar
@@ -44,34 +39,31 @@ export default function Courses() {
             </h1>
 
             <p>
-              Programas para comprender el cuerpo desde una mirada física,
-              emocional, energética y terapéutica.
+              Programas para comprender el cuerpo desde una
+              mirada física, emocional, energética y terapéutica.
             </p>
           </div>
         </section>
 
-        <section className="courses-list">
-          <div className="container courses-grid two">
-            {courses.map((course) => (
-              <article className="course-card" key={course.title}>
-                <img src={course.image} alt={course.title} />
-                <span>{course.type}</span>
-                <h2>{course.title}</h2>
-                <p>{course.description}</p>
-
-                <div className="course-meta">
-                  <strong>Dirigido a:</strong>
-                  <small>{course.audience}</small>
-                </div>
-
-                <a href="/contacto" className="course-link">
-                  Solicitar información
-                </a>
-              </article>
-            ))}
+        <section className="therapy-catalog">
+          <div className="container">
+            <div className="catalog-grid">
+              {courses.map((course) => (
+                <CourseCard
+                  key={course.title}
+                  course={course}
+                  onClick={() => setSelectedCourse(course)}
+                />
+              ))}
+            </div>
           </div>
         </section>
       </main>
+
+      <CourseModal
+        course={selectedCourse}
+        onClose={() => setSelectedCourse(null)}
+      />
     </>
   );
 }
